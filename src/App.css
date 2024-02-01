@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+
+#root {
+  --navbar-height: 100px; /* Define the height of the navbar */
+}
+
+.navbarMain {
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it sta rting from the left */
+  right: 0; /* Stretch it across the right */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  height: var(--navbar-height); /* Use the defined height */
+}
+
+/* Add padding to the top of the main content equal to the navbar height */
+body {
+  padding-top: var(--navbar-height);
+}
+
+

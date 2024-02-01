@@ -1,0 +1,22 @@
+.contact-container {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  margin-bottom: 250px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 200px; /* This makes the message input bigger */
+}
