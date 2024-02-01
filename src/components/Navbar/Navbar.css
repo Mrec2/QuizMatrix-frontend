@@ -1,0 +1,69 @@
+/* body{
+    color:white;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.navbarMain {
+    list-style: none;
+    margin-bottom: 50px;
+    background-color: #36072A;
+    width: 100%;
+    height: 100px;
+    
+}
+.navbarMain ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarMain ul li{
+    border: 2px solid white;
+    background-color: #12020E;
+    padding: 8px 12px;
+}
+
+.navbarMain ul li a{
+    color:white;
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+
+.navbarMain {
+    display: flex; /* Align navbar items in a row */
+    justify-content: center; /* Center navbar items horizontally */
+    align-items: center; /* Center navbar items vertically */
+    background-color: #4a154b; /* Set a nice color for the navbar background */
+    color: #ffffff; /* Set a nice contrasting color for the text */
+    padding: 10px 0; /* Add some padding above and below the navbar */
+}
+
+.navbarMain ul {
+    display: flex; /* Ensure the list is also displayed as a row */
+    justify-content: space-evenly; /* Distribute space evenly around list items */
+    align-items: center; /* Align list items vertically */
+    width: 100%; /* Full width to utilize the space */
+    list-style: none; /* Remove default list styling */
+}
+
+.navbarMain ul li {
+    margin: 0 20px; /* Add some margin to each list item for spacing */
+}
+
+.navbarMain ul li a {
+    color: inherit; /* Inherit color from parent for consistency */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Add some padding for clickable area */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbarMain ul li a:hover {
+    background-color: #361d32; /* Change background on hover for visual effect */
+}

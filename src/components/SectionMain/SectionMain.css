@@ -1,0 +1,78 @@
+
+/* .testElementSection {
+    display: flex;
+    flex-direction: row;
+} */
+
+
+
+/* .sectionMain {
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+    
+} */
+
+/* .imgTestSection {
+    width: 600px;
+    height: 600px;
+}
+
+.imgTestSection img {
+    width: 100%;
+    height: 100%;
+} */
+/* .sectionMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sectionMain .testElementSection {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sectionMain .testElementSection .imgTestSection {
+    grid-row: 1 / span 2;
+}
+
+.sectionMain .testElementSection p {
+    margin: 0;
+} */
+
+/* All these classes is to struct the sectionMain with image and text */
+
+.sectionMain {
+    display: grid;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.sectionMain .testElementSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionMain .testElementSection .imgTestSection {
+    width: 100px; /* assuming small means 100px */
+    height: 100px;
+    align-self: center; /* centers the image within the testElementSection */
+}
+
+.sectionMain .testElementSection img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* ensures the image is not stretched */
+}

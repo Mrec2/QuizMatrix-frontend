@@ -1,9 +1,12 @@
 import "./App.css";
+import RouterApps from "./router/RouterApps.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
   return (
     <>
-      <h3>Hola!! Probando 123</h3>
+      <Navbar />
+      <RouterApps />
     </>
   );
 }
