@@ -1,0 +1,113 @@
+.login {
+    /* Para poner comentarios */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-image: url("../../images/fondos/computer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* tamaño letra heredado */
+    font-size: 50px;
+}
+
+.login-contenedor {
+    display: grid;
+    gap: 21px;
+    
+    width: 66vw;
+    height: 500px;
+    grid-template-columns: 1fr;
+    border: 2px solid orangered;
+    border-radius: 15px;
+
+    /*blanco*/
+    background: rgba(255, 255, 255, 0.5);
+    
+}
+
+.login-contenedor-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: orange;
+}
+
+.login-contenedor-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    color: red;
+
+    font-size: 20px;
+    font-weight: bolder;
+    height: 40px;
+
+    /*background-color: white;*/
+}
+
+.login-contenedor-form {
+    display: grid;
+    gap: 21px;
+    grid-template-columns: 1fr;
+    padding: 20px 80px;
+    margin-top: -100px;
+}
+
+.one-column {
+    display: grid;
+    gap: 21px;
+    grid-template-columns: 1fr;
+}
+
+
+input {
+    margin-bottom: 0px;
+    color: black;
+    font-weight: bolder;
+
+    padding: 5px 0px;
+    width: 100%;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid blue;
+    background-color: transparent;
+    transition: 0.5s all ease-in-out;
+    font-size: 20px;
+    margin-bottom: 21px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid darkblue;
+}
+
+.btn-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 150px;
+    height: 70px;
+    color: orangered;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 1px solid white;
+    transition: 0.5s all ease-in-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: orangered;
+    border: 1px solid orangered;
+}
