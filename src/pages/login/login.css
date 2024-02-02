@@ -6,9 +6,9 @@
 
     height: 100vh;
 
-    background-image: url("../../images/fondos/computer.jpg");
+    /*background-image: url("../../images/fondos/computer.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 
     /* tamaño letra heredado */
     font-size: 50px;

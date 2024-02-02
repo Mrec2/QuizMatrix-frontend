@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./login.css";
+import "./Login.css";
 
 
 export default class Login extends Component {
