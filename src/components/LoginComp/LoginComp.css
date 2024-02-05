@@ -76,7 +76,7 @@ input {
 
 input:focus {
     outline: none;
-    border-bottom: 1px solid darkblue;
+    border-bottom: 3px solid orangered;
 }
 
 .btn-contenedor {
