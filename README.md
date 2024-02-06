@@ -1,8 +1,11 @@
-# React + Vite
+# KNOWLEDGER TESTING
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a platform that help you to put in practice your programming knlowldge doing online tests.
 
-Currently, two official plugins are available:
+The reason of this project came out of integrating the frontend with Java Backend using Spring , considering that me and my mates are studying Web Developing in Java environment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Authors
+
+- [@Mrec2](https://github.com/Mrec2)
+- [@Cochises](https://github.com/Cochises)
+- [@jumair](https://github.com/jumair)
