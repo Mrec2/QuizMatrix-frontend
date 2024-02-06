@@ -4,6 +4,8 @@ const About = () => {
   return (
     <>
       <AboutComp />
+      <AboutComp />
+      <AboutComp />
     </>
   );
 };
