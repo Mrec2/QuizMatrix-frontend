@@ -1,0 +1,54 @@
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SECCION 2 */
+.section-conocimientos {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  gap: 50px;
+}
+
+.section-conocimientos-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-conocimientos--titulo {
+  font-size: 4.5rem;
+}
+
+.section-conocimientos--parrafo {
+  font-size: 1.5rem;
+}
+
+.section-conocimientos--parrafo-edit {
+  text-decoration: underline;
+  color: #e82223;
+}
+
+.section-conocimientos--btn {
+  display: inline-block;
+  align-self: start;
+  padding: 10px 15px;
+  font-size: 1.4rem;
+}
+
+.section-conocimientos-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-conocimientos--img {
+  width: 300px;
+}
+
+img {
+  width: 520px;
+}

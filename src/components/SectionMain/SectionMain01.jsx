@@ -1,45 +1,22 @@
-import "./SectionMain.css";
+import "./SectionMain01.css";
 
 const SectionMain01 = () => {
   return (
-    <div className="sectionMain">
-      <div className="testElementSection">
-        <div className="imgTestSection">
-          <img src="../../../img/example.jpg" alt="photo1" />
-        </div>
-        <p>
-          Pon a prueba tus conocimientos de HTML, CSS y JavaScript realizando
-          tests de una manera gratuita.
-        </p>
-      </div>
-      <div className="testElementSection">
-        <div className="imgTestSection">
-          <img src="../../../img/example.jpg" alt="photo2" />
-        </div>
-        <p>
-          Tenemos distinto niveles que puedes realizar, desde un nivel básico
-          hasta un nivel avanzado.
-        </p>
-      </div>
-      <div className="testElementSection">
-        <div className="imgTestSection">
-          <img src="../../../img/example.jpg" alt="photo3" />
-        </div>
-        <p>
-          A la vez que aprendes practicando con nuestros tests, puedes mejorar
-          tus conocimientos teóricos de programación.
-        </p>
-      </div>
-      <div className="testElementSection">
-        <div className="imgTestSection">
-          <img src="../../../img/example.jpg" alt="photo4" />
-        </div>
-        <p>
-          Todos los tests puedes realizarlos en cualquier dispositivo, desde
-          ordenadores hasta dispositivos móviles.
-        </p>
-      </div>
+    <div className="contenedor">
+      <section className="section-principal">
+        <section className="section-texto">
+          <h1 className="section-principal--titulo">Domina Java como un Experto</h1>
+          <p className="section-principal--parrafo">
+            Mejora tus habilidades de codificación en Java realizando Tests.
+          </p>
+          <button className="section-principal-btn">Empezar</button>
+        </section>
+        <section className="section-imagen">
+          <img src="../public/imgs-home-page/icon-programming.png" alt="Logo de Java" />
+        </section>
+      </section>
     </div>
+
   );
 };
 
