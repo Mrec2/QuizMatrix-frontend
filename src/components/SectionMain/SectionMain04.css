@@ -1,0 +1,20 @@
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding-bottom: 80px;
+}
+
+.seccion-imagen-icon {
+  width: 350px;
+}
+
+.seccion-info--title {
+  font-size: 3rem;
+  line-height: 1.5;
+}

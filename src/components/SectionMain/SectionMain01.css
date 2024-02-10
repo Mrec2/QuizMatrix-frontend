@@ -1,0 +1,42 @@
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SECCION PRINCIPAL */
+.section-principal {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  place-content: center;
+}
+
+.section-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-principal--titulo {
+  font-size: 8.2rem;
+  margin-bottom: 10px;
+}
+
+.section-principal--parrafo {
+  font-size: 1.8rem;
+}
+
+.section-principal-btn {
+  display: inline-block;
+  width: 100px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
