@@ -5,6 +5,7 @@ import Contact from "../pages/Contact/Contact.jsx";
 import Account from "../pages/Account/Account.jsx";
 import Login from "../pages/Login/Login.jsx";
 import TestPage from "../pages/TestPage/TestPage.jsx";
+import FaqPage from "../pages/FaqPage/FaqPage.jsx";
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
       <Route path="/account" element={<Account />} />
       <Route path="/register" element={<Login />} />
       <Route path="/tests" element={<TestPage />} />
+      <Route path="/FAQ" element={<FaqPage />} />
     </Routes>
   );
 };
