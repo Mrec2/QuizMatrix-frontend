@@ -13,15 +13,15 @@ const About = () => {
       <div className="about-empleados">
 
         <div className="about-empleado">
-          <EmpleadoComp empleado="Mario" descripcion="FullStack Developer" foto="mario" />
+          <EmpleadoComp empleado="Mario" descripcion="Full Stack Developer" tecnologias="Mongo DB, ExpressJS, ReactJS, NodeJS" foto="mario" />
         </div>
 
         <div className="about-empleado">
-          <EmpleadoComp empleado="Alberto" descripcion="Frontend Developer" foto="juanma" />
+          <EmpleadoComp empleado="Alberto" descripcion="Front-end Developer" tecnologias="HTML, CSS, Javascript" foto="juanma" />
         </div>
           
         <div className="about-empleado">
-          <EmpleadoComp empleado="Juanma" descripcion="Backend Developer" foto="juanma" />
+          <EmpleadoComp empleado="Juanma" descripcion="Back-end Developer" tecnologias="Javascript, ReactJS, Python, Flask" foto="juanma" />
         </div>
 
       </div>

@@ -9,6 +9,7 @@ export default class Login extends Component {
     this.state = {
       empleado: this.props.empleado,
       descripcion: this.props.descripcion,
+      tecnologias: this.props.tecnologias,
       foto: this.props.foto,
       linkedin:""
     };
@@ -28,6 +29,7 @@ export default class Login extends Component {
 
         <div className="empleado-nombre">{this.state.empleado}</div>
         <div className="empleado-descripcion">{this.state.descripcion}</div>
+        <div className="empleado-tecnologias">{this.state.tecnologias}</div>
         <div className="empleado-linkedin"></div>
       </div>
     );
