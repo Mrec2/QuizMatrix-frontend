@@ -13,9 +13,14 @@ const AboutComp = () => {
           <div className="textoAboutSection">
             <h2>Acerca de la empresa</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id, accusantium, sunt exercitationem repellendus eos rem vel facilis quos modi officia soluta voluptatem asperiores! Doloribus impedit odio at necessitatibus id!
-              Temporibus aut veniam placeat dicta optio, facilis in eius similique repellat repellendus mollitia cupiditate debitis assumenda quaerat quidem porro odit est omnis culpa qui, modi iste? Facilis voluptatum consequuntur culpa!
-              Atque natus ipsum alias, sit expedita est officia consequuntur soluta, veritatis sed totam deleniti fugit iure! Dolore, aperiam inventore in est hic veniam libero pariatur ipsam quae commodi quisquam reprehenderit.
+              Desarrollando una plataforma para la realización de tests online . Las tecnologías que se están usando tanto en Frontend como en Backend son React, Javascript, Css, HTML, Java EE, Java Servelets, JSP etc. 
+              Además de todas estas tecnologías se está usando como control de versiones Git y trabajando en remoto con Github.
+            </p>
+            <p>
+              El objetivo del proyecto es el poder integrar todo el potencial de Java con Spring Boot para gestionar todas las peticiones del Front End. En este caso nuestro JSP tendrá que gestionar mediante Servlets toda la información que necesita el Front, como cargar nuestros tests HTML desde el Back, registros de usuarios, validador de respuestas, Login, sesiones, roles etc.
+            </p>
+            <p>
+              Para la realización de este proyecto están colaborando varios compañeros que brevemente serán añadidos.
             </p>
           </div>
 
