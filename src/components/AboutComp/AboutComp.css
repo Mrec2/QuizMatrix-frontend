@@ -1,5 +1,6 @@
 .aboutMain {
-    margin-top: 100px;
+    margin-top: 25px;
+    padding: 0 25px;
 }
 
 .aboutSection {
@@ -10,7 +11,7 @@
 
 .imgAboutSection {
     width: 350px;
-    height: 350px;
+    height: 250px;
 }
 
 .imgAboutSection > img {

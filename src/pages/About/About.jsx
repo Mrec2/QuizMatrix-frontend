@@ -17,7 +17,7 @@ const About = () => {
         </div>
 
         <div className="about-empleado">
-          <EmpleadoComp empleado="Alberto" descripcion="Front-end Developer" tecnologias="HTML, CSS, Javascript" foto="juanma" />
+          <EmpleadoComp empleado="Alberto" descripcion="Front-end Developer" tecnologias="HTML, CSS, Javascript" foto="alberto" />
         </div>
           
         <div className="about-empleado">

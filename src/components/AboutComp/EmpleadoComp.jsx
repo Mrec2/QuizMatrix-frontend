@@ -2,23 +2,37 @@ import { Component } from "react";
 
 import "./EmpleadoComp.css";
 
-export default class Login extends Component {
+const EmpleadoComp = (props) => {
+
+  const fotoEmpleado = "../../../img/about/" + props.foto + ".jpg";
+
+  return (
+    <>
+    <div className="empleado">
+
+      <div className="empleado-foto">
+          <img src={fotoEmpleado} alt="foto de empleado" />
+      </div>
+
+      <div className="empleado-nombre">{props.empleado}</div>
+      <div className="empleado-descripcion">{props.descripcion}</div>
+      <div className="empleado-tecnologias">{props.tecnologias}</div>
+      <div className="empleado-linkedin"></div>
+    </div>
+    </>
+  )
+}
+
+export default EmpleadoComp;
+
+/*export default class Empleado extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      empleado: this.props.empleado,
-      descripcion: this.props.descripcion,
-      tecnologias: this.props.tecnologias,
-      foto: this.props.foto,
-      linkedin:""
-    };
-
   }
 
   render() {
 
-    const fotoEmpleado = "../../../img/about/" + this.state.foto + ".jpg";
+    const fotoEmpleado = "../../../img/about/" + this.props.foto + ".jpg";
 
     return (
       <div className="empleado">
@@ -27,11 +41,11 @@ export default class Login extends Component {
             <img src={fotoEmpleado} alt="foto de empleado" />
         </div>
 
-        <div className="empleado-nombre">{this.state.empleado}</div>
-        <div className="empleado-descripcion">{this.state.descripcion}</div>
-        <div className="empleado-tecnologias">{this.state.tecnologias}</div>
+        <div className="empleado-nombre">{this.props.empleado}</div>
+        <div className="empleado-descripcion">{this.props.descripcion}</div>
+        <div className="empleado-tecnologias">{this.props.tecnologias}</div>
         <div className="empleado-linkedin"></div>
       </div>
     );
   }
-}
+}*/
