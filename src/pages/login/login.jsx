@@ -3,7 +3,7 @@ import LoginComp from "../../components/LoginComp/LoginComp";
 const Login = () => {
   return (
     <>
-      <LoginComp />
+      <LoginComp errorText = "El usuario no es correcto"/>
     </>
   );
 };
