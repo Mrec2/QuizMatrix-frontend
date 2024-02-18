@@ -9,8 +9,8 @@ const LoginComp = (props) => {
   const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = () => {}
- 
+  const handleSubmit = () => { }
+
   return (
     <div className="login">
 
@@ -53,8 +53,8 @@ const LoginComp = (props) => {
               Login
             </button>
 
-            <div className="login-enlace-singin">             
-                <Link to="/account" className="enlace">Crear Usuario</Link>
+            <div className="login-enlace-singin">
+              <Link to="/register" className="enlace">Crear Usuario</Link>
             </div>
 
           </div>

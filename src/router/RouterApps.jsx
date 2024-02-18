@@ -6,6 +6,7 @@ import Account from "../pages/Account/Account.jsx";
 import Login from "../pages/Login/Login.jsx";
 import TestPage from "../pages/TestPage/TestPage.jsx";
 import FaqPage from "../pages/FaqPage/FaqPage.jsx";
+import Register from "../pages/Register/Register.jsx";
 
 const AppRoutes = () => {
   return (
@@ -14,7 +15,8 @@ const AppRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/account" element={<Account />} />
-      <Route path="/register" element={<Login />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/tests" element={<TestPage />} />
       <Route path="/FAQ" element={<FaqPage />} />
     </Routes>
