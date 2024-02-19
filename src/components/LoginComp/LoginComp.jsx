@@ -1,75 +1,74 @@
-import { Component } from "react";
+import { Link } from "react-router-dom";
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import "./LoginComp.css";
 
-export default class Login extends Component {
-  constructor(props) {
-    super(props);
+const LoginComp = (props) => {
 
-    this.state = {
-      usuario: "",
-      password: "",
-      errorText: "El usuario no es correcto",
-    };
+  const [usuario, setUsuario] = useState('');
+  const [password, setPassword] = useState('');
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  const handleSubmit = () => { }
 
-  handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value,
-      errorText: "",
-    });
-  }
+  return (
+    <div className="login">
 
-  handleSubmit() {}
+      <div className="login-contenedor">
 
-  render() {
-    return (
-      <div className="login">
-        <div className="login-contenedor">
-          <div className="login-contenedor-texto">
-            <h2>LOGIN</h2>
+        <div className="login-contenedor-texto">
+          <h2>LOGIN</h2>
+        </div>
+
+        <div className="login-contenedor-error">{props.errorText}</div>
+
+        <form className="login-contenedor-form" onSubmit={handleSubmit}>
+
+          <div className="one-column">
+            <input
+              type="text"
+              name="usuario"
+              required
+              autoFocus
+              placeholder="Usuario"
+              value={usuario}
+              onChange={e => setUsuario(e.target.value)}
+            />
           </div>
 
-          <div className="login-contenedor-error">{this.state.errorText}</div>
+          <div className="one-column">
+            <input
+              type="password"
+              name="password"
+              required
+              placeholder="Password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+            />
+          </div>
 
-          <form className="login-contenedor-form" onSubmit={this.handleSubmit}>
-            <div className="one-column">
-              <input
-                type="text"
-                name="usuario"
-                required
-                autoFocus
-                placeholder="Usuario"
-                value={this.state.usuario}
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="one-column">
-              <input
-                type="password"
-                name="password"
-                required
-                placeholder="Password"
-                value={this.state.password}
-                onChange={this.handleChange}
-              />
+          <div className="botones-contenedor">
+
+            <button className="btn" type="submit">
+              Login
+            </button>
+
+            <div className="login-enlace-singin">
+              <Link to="/register" className="enlace">Crear Usuario</Link>
             </div>
 
-            <div className="btn-contenedor">
-              <button className="btn" type="submit">
-                Login
-              </button>
-            </div>
-          </form>
-        </div>
+          </div>
 
-        <div className="login-enlace-singin">
-          <p>Crear Usuario</p>
-        </div>
+        </form>
+
       </div>
-    );
-  }
+
+    </div>
+  );
 }
+
+LoginComp.propTypes = {
+  errorText: PropTypes.string.isRequired,
+};
+
+export default LoginComp;

@@ -1,34 +1,44 @@
-import { Component } from "react";
+import PropTypes from "prop-types";
+// import { useState } from "react";
 
 import "./EmpleadoComp.css";
 
-export default class Login extends Component {
-  constructor(props) {
-    super(props);
+const EmpleadoComp = ({ empleado }) => {
+  const { nombre, descripcion, tecnologias, fotoImg } = empleado;
+  // const [foto, setFotos] = useState(fotoImg);
 
-    this.state = {
-      empleado: this.props.empleado,
-      descripcion: this.props.descripcion,
-      tecnologias: this.props.tecnologias,
-      foto: this.props.foto,
-      linkedin: "",
-    };
-  }
+  // const updateFoto = () => {
+  //   setFotos(fotoImg);
+  // };
 
-  render() {
-    const fotoEmpleado = "../../../img/about/" + this.state.foto + ".jpg";
-
-    return (
+  return (
+    <>
       <div className="empleado">
         <div className="empleado-foto">
-          <img src={fotoEmpleado} alt="foto de empleado" />
+          <img src={fotoImg} alt="foto de empleado" />
         </div>
 
-        <div className="empleado-nombre">{this.state.empleado}</div>
-        <div className="empleado-descripcion">{this.state.descripcion}</div>
-        <div className="empleado-tecnologias">{this.state.tecnologias}</div>
+        <div className="empleado-nombre">{nombre}</div>
+        <div className="empleado-descripcion">{descripcion}</div>
+        <div className="empleado-tecnologias">{tecnologias}</div>
         <div className="empleado-linkedin"></div>
       </div>
-    );
-  }
-}
+
+      <div className="empleado-nombre">{empleado.nombre}</div>
+      <div className="empleado-descripcion">{empleado.descripcion}</div>
+      <div className="empleado-tecnologias">{empleado.tecnologias}</div>
+      <div className="empleado-linkedin"></div>
+    </>
+  );
+};
+
+EmpleadoComp.propTypes = {
+  empleado: PropTypes.shape({
+    nombre: PropTypes.string.isRequired,
+    descripcion: PropTypes.string.isRequired,
+    tecnologias: PropTypes.string.isRequired,
+    fotoImg: PropTypes.string,
+  }).isRequired,
+};
+
+export default EmpleadoComp;

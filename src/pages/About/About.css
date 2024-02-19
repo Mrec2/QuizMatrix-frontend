@@ -1,6 +1,8 @@
 .about-empleados {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
-    margin-bottom: 10px;
+    column-gap: 3rem;
+    margin-bottom: 1rem;
+    padding: 0 3rem;
+    width: 100%;
 }

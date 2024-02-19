@@ -7,7 +7,7 @@ const AboutComp = () => {
         <div className="aboutSection">
 
           <div className="imgAboutSection">
-            <img src="../../../img/example.jpg" alt="photo empresa" />
+            <img src="../../../img/example.jpg" alt="foto empresa" />
           </div>
 
           <div className="textoAboutSection">
