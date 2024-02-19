@@ -11,20 +11,17 @@ export default class Login extends Component {
       descripcion: this.props.descripcion,
       tecnologias: this.props.tecnologias,
       foto: this.props.foto,
-      linkedin:""
+      linkedin: "",
     };
-
   }
 
   render() {
-
     const fotoEmpleado = "../../../img/about/" + this.state.foto + ".jpg";
 
     return (
       <div className="empleado">
-
         <div className="empleado-foto">
-            <img src={fotoEmpleado} alt="foto de empleado" />
+          <img src={fotoEmpleado} alt="foto de empleado" />
         </div>
 
         <div className="empleado-nombre">{this.state.empleado}</div>
