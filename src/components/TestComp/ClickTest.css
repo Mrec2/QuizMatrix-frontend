@@ -1,0 +1,32 @@
+.testImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testImgContainer img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.testImgContainer img:hover {
+    transform: scale(1.05);
+}
+
+.testImgContainer p {
+    color: #333;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}

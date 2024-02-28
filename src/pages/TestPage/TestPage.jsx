@@ -1,4 +1,5 @@
 import TexComp from "../../components/TestComp/TextComp.jsx";
+import ClickTest from "../../components/TestComp/ClickTest.jsx";
 
 const TestPage = () => {
   return (
@@ -6,6 +7,7 @@ const TestPage = () => {
       <p>
         <TexComp />
       </p>
+      <ClickTest />
     </>
   );
 };
