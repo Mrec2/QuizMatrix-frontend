@@ -11,9 +11,9 @@
 }
 
 .testImgContainer img {
-    width: 100px; 
-    height: 100px; 
-    object-fit: cover;
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain;
     border: 2px solid #ddd;
     border-radius: 4px;
     padding: 0.5rem;
