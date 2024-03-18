@@ -7,7 +7,7 @@ import Login from "../pages/Login/Login.jsx";
 import TestPage from "../pages/TestPage/TestPage.jsx";
 import FaqPage from "../pages/FaqPage/FaqPage.jsx";
 import Register from "../pages/Register/Register.jsx";
-import TestDoingJs from "../pages/TestDoing/TestDoingJs.jsx";
+import TestDoing from "../pages/TestDoing/TestDoing.jsx";
 
 const AppRoutes = () => {
   return (
@@ -20,7 +20,7 @@ const AppRoutes = () => {
       <Route path="/register" element={<Register />} />
       <Route path="/tests" element={<TestPage />} />
       <Route path="/FAQ" element={<FaqPage />} />
-      <Route path="/test-doing" element={<TestDoingJs />} />
+      <Route path="/test-doing" element={<TestDoing />} />
     </Routes>
   );
 };

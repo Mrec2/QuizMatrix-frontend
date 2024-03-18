@@ -1,20 +1,32 @@
 import { useEffect, useState } from "react";
+import "./TestDoing.css";
 
-const TestDoingJs = () => {
+const TestDoing = () => {
   // Define el estado para almacenar los datos
   const [datos, setDatos] = useState([]);
+  const [miTest, setMiTest] = useState("");
 
   useEffect(() => {
     const datosLocalStorage = localStorage.getItem("misDatos");
     if (datosLocalStorage) {
-      // Actualiza el estado con los datos procesados
       setDatos(JSON.parse(datosLocalStorage));
     }
   }, []);
 
+  useEffect(() => {
+    const datosLocalStorage = localStorage.getItem("queTest");
+    if (datosLocalStorage) {
+      console.log("miTest", datosLocalStorage);
+      setMiTest(datosLocalStorage);
+    }
+  }, []);
+
   return (
-    <>
-      <h1>Testing JS TEST</h1>
+    <div className="testDoingContainer">
+      {miTest === "js" && <h1>Test de Javascript</h1>}
+      {miTest === "css" && <h1>Test de CSS</h1>}
+      {miTest === "html" && <h1>Test de HTML</h1>}
+      {miTest === "java" && <h1>Test de Java</h1>}
       <div>
         {datos.map((item, index) => (
           <div key={index}>
@@ -27,8 +39,8 @@ const TestDoingJs = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default TestDoingJs;
+export default TestDoing;

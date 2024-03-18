@@ -15,7 +15,8 @@ class TestAxios extends InitAxios {
   async postTest(data) {
     try {
       const response = await this.axios.post("", data);
-      alert("Datos enviados correctamente. -->" + data);
+      // alert("Datos enviados correctamente. -->" + data);
+      localStorage.setItem("queTest", data);
       if (response.status === 200) {
         // const nuevaUrl = response.data.url;
         window.location.href = "/test-doing";
