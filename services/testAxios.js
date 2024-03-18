@@ -19,6 +19,8 @@ class TestAxios extends InitAxios {
       if (response.status === 200) {
         // const nuevaUrl = response.data.url;
         window.location.href = "/test-doing";
+        console.log("Respuesta del servidor:", response.data);
+        localStorage.setItem("misDatos", JSON.stringify(response.data));
       } else {
         console.error("Respuesta del servidor no fue 200 OK");
       }
