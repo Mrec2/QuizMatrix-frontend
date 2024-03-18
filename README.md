@@ -1,4 +1,4 @@
-# KNOWLEDGER TESTING
+# QuizMatrix
 
 This is a platform that help you to put in practice your programming knowledges doing online tests.
 
