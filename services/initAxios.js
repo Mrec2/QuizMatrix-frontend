@@ -1,9 +1,13 @@
 import axios from "axios";
 
 class InitAxios {
-  constructor() {
+  constructor(url) {
     this.axios = axios.create({
-      baseURL: "https://jsonplaceholder.typicode.com/todos/",
+      // baseURL: "http://localhost:8080/TestBackEnd/testServlet",
+
+      // baseURL: "http://localhost:8080/test-project-backend/testServlet",
+
+      baseURL: url,
     });
   }
 }

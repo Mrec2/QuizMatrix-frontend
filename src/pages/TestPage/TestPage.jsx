@@ -4,9 +4,9 @@ import ClickTest from "../../components/TestComp/ClickTest.jsx";
 const TestPage = () => {
   return (
     <>
-      <p>
+      <div>
         <TexComp />
-      </p>
+      </div>
       <ClickTest />
     </>
   );

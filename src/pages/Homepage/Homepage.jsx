@@ -9,7 +9,7 @@ const Homepage = () => {
   // Probando la llamada Axios
 
   const testAxios = new TestAxios();
-  console.log(testAxios.getTest());
+  testAxios.postTest();
 
   return (
     <>
