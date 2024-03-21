@@ -9,12 +9,13 @@ class TestAxios extends InitAxios {
   // }
 
   constructor() {
-    super("http://localhost:8080/test-project-backend/testServlet");
+    super("http://localhost:8080/test-project-backend/testServlet/");
   }
 
   async postTest(data) {
     try {
-      const response = await this.axios.post("", data);
+      // const response = await this.axios.post(`${data}`, data);
+      const response = await this.axios.post(`${data}`, data);
       // alert("Datos enviados correctamente. -->" + data);
       localStorage.setItem("queTest", data);
       if (response.status === 200) {
@@ -22,8 +23,8 @@ class TestAxios extends InitAxios {
         window.location.href = "/test-doing";
         console.log("Respuesta del servidor:", response.data);
         localStorage.setItem("misDatos", JSON.stringify(response.data));
-      } else {
-        console.error("Respuesta del servidor no fue 200 OK");
+      } else if (response.status === 400) {
+        console.error("Respuesta del servidor no fue 200 OK", response.data);
       }
     } catch (error) {
       console.error("Error al enviar los datos:", error);

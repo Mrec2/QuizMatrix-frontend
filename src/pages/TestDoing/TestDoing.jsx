@@ -28,16 +28,20 @@ const TestDoing = () => {
       {miTest === "html" && <h1>Test de HTML</h1>}
       {miTest === "java" && <h1>Test de Java</h1>}
       <div>
-        {datos.map((item, index) => (
-          <div key={index}>
-            <h2>{item.pregunta}</h2>
-            <ul>
-              {item.opciones.map((opcion, opcionIndex) => (
-                <li key={opcionIndex}>{opcion}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {datos.length > 0 ? (
+          datos.map((item, index) => (
+            <div key={index}>
+              <h2>{item.pregunta}</h2>
+              <ul>
+                {item.opciones.map((opcion, opcionIndex) => (
+                  <li key={opcionIndex}>{opcion}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        ) : (
+          <p>No hay datos</p>
+        )}
       </div>
     </div>
   );
