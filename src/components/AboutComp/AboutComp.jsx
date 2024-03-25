@@ -1,14 +1,14 @@
-import "./AboutComp.css";
+import styles from "./AboutComp.module.css";
 
 const AboutComp = () => {
   return (
-    <div className="aboutMain">
-      <div className="aboutSection">
-        <div className="imgAboutSection">
+    <div className={styles.aboutMain}>
+      <div className={styles.aboutSection}>
+        <div className={styles.imgAboutSection}>
           <img src="../../../img/example.jpg" alt="foto empresa" />
         </div>
 
-        <div className="textoAboutSection">
+        <div className={styles.textoAboutSection}>
           <h2>Acerca de Knowledger Test</h2>
           <p>
             Desarrollando una plataforma para la realización de tests online .
