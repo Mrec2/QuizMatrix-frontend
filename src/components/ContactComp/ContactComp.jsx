@@ -1,10 +1,10 @@
-import "./ContactComp.css";
+import styles from "./ContactComp.module.css";
 
 const ContactComp = () => {
   return (
-    <div className="contact-container">
+    <div className={styles.contactContainer}>
       <h1>Contact Us</h1>
-      <form className="contact-form">
+      <form className={styles.contactForm}>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" name="name" required />
 

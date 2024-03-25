@@ -1,9 +1,9 @@
-import "./AccountProfile.css";
+import styles from "./AccountProfile.module.css";
 
 const AccountProfile = () => {
   return (
     <>
-      <div className="container">
+      <div className={styles.container}>
         <div>
           <img src="../../../img/examplee.jpg" alt="foto-perfil" />
           <h1>Nombre Usuario</h1>
