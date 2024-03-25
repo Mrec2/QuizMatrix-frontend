@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import "./TestDoing.css";
+
+import styles from "./TestDoing.module.css";
 
 const TestDoing = () => {
   // Define el estado para almacenar los datos
@@ -22,7 +23,7 @@ const TestDoing = () => {
   }, []);
 
   return (
-    <div className="testDoingContainer">
+    <div className={styles.testDoingContainer}>
       {miTest === "js" && <h1>Test de Javascript</h1>}
       {miTest === "css" && <h1>Test de CSS</h1>}
       {miTest === "html" && <h1>Test de HTML</h1>}

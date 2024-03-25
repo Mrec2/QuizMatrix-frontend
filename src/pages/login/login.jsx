@@ -1,5 +1,7 @@
 import LoginComp from "../../components/LoginComp/LoginComp";
 
+import styles from "./login.module.css";
+
 const Login = () => {
   return (
     <>
