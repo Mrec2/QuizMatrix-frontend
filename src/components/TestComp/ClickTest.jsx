@@ -1,4 +1,5 @@
-import "./ClickTest.css";
+import styles from "./ClickTest.module.css";
+
 import TestAxios from "../../../services/testAxios";
 
 const ClickTest = () => {
@@ -27,22 +28,38 @@ const ClickTest = () => {
   };
 
   return (
-    <div className="testImgContainer">
+    <div className={styles.testContainerImgs}>
       <button type="button" onClick={getHtmlTest}>
-        <img src="/imgs-tests-page/html.png" alt="HTML" />
-        <p>HTML</p>
+        <img 
+          src="/imgs-tests-page/html.png" 
+          alt="HTML"
+          className={styles.testContainerImg}
+        />
+        <p className={styles.testContainerText}>HTML</p>
       </button>
       <button type="button" onClick={getCssTest}>
-        <img src="/imgs-tests-page/css.png" alt="CSS" />
-        <p>CSS</p>
+        <img 
+          src="/imgs-tests-page/css.png" 
+          alt="CSS" 
+          className={styles.testContainerImg}  
+        />
+        <p className={styles.testContainerText}>CSS</p>
       </button>
       <button type="button" onClick={getJsTest}>
-        <img src="/imgs-tests-page/js.png" alt="Javascript" />
-        <p>Javascript</p>
+        <img 
+          src="/imgs-tests-page/js.png" 
+          alt="Javascript" 
+          className={styles.testContainerImg}
+        />
+        <p className={styles.testContainerText}>Javascript</p>
       </button>
       <button type="button" onClick={getJavaTest}>
-        <img src="/imgs-tests-page/java.png" alt="Java" />
-        <p>Java</p>
+        <img 
+          src="/imgs-tests-page/java.png" 
+          alt="Java" 
+          className={styles.testContainerImg}
+        />
+        <p className={styles.testContainerText}>Java</p>
       </button>
     </div>
   );

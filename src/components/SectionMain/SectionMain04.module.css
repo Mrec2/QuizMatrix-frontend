@@ -3,18 +3,20 @@
   margin: 0 auto;
 }
 
-.seccion-principal {
+.seccionPrincipal {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   padding-bottom: 80px;
 }
 
-.seccion-imagen-icon {
-  width: 350px;
-}
-
-.seccion-info--title {
+.seccionInfoTitle {
   font-size: 3rem;
   line-height: 1.5;
 }
+
+.seccionImagenIcon {
+  width: 350px;
+}
+
+

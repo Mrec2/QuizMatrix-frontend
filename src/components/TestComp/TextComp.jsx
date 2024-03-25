@@ -1,9 +1,9 @@
-import "./TextComp.css";
+import styles from "./TextComp.module.css";
 
 const TextComp = () => {
   return (
     <>
-      <div className="testInfo">
+      <div className={styles.testInfo}>
         <h1>Online Tests</h1>
         <p>
           Our platform offers a variety of online tests to assess and improve

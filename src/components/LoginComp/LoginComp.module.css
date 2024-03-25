@@ -7,7 +7,7 @@
     font-size: 2rem;
 }
 
-.login-contenedor {
+.loginContenedor {
     display: grid;
     gap: 2rem;
     width: 40vw;
@@ -15,12 +15,10 @@
     grid-template-columns: 1fr;
     border: 2px solid orangered;
     border-radius: 1.5rem;
-
-    /*blanco*/
     background: rgba(255, 255, 255, 0.5);
 }
 
-.login-contenedor-texto {
+.loginContenedorTexto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +26,7 @@
     margin-top: -5rem;
 }
 
-.login-contenedor-error {
+.loginContenedorError {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +37,7 @@
     height: 4rem;
 }
 
-.login-contenedor-form {
+.loginContenedorform {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr;
@@ -47,7 +45,7 @@
     margin-top: -18rem;
 }
 
-.one-column {
+.oneColumn {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr;
@@ -74,7 +72,7 @@ input:focus {
     border-bottom: 3px solid orangered;
 }
 
-.botones-contenedor {
+.botonesContenedor {
     display: flex;
     align-items: center;
 }
@@ -97,13 +95,13 @@ input:focus {
     border: 1px solid orangered;
 }
 
-.login-enlace-singin {
+.loginEnlaceSingin {
     display: flex;
     justify-content: right;
     width: 100%;
 }
 
-.login-enlace-singin .enlace {
+.enlaceCrearUsuario {
     text-decoration: none;
     color: black;
     font-size: 1.8rem;
@@ -111,7 +109,7 @@ input:focus {
     transition: 0.5s all ease-in-out; 
 }
 
-.login-enlace-singin .enlace:hover {
+.enlaceCrearUsuario:hover {
     color: orangered;
     cursor: pointer;
 }

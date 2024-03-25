@@ -1,20 +1,23 @@
-import "./SectionMain01.css";
+import styles from "./SectionMain01.module.css";
 
 const SectionMain01 = () => {
   return (
-    <div className="contenedor">
-      <section className="section-principal">
-        <section className="section-texto">
-          <h1 className="section-principal--titulo">
+    <div className={styles.contenedor}>
+      <section className={styles.sectionPrincipal}>
+        <section className={styles.sectionTexto}>
+          <h1 className={styles.sectionPrincipalTitulo}>
             Domina Java como un Experto
           </h1>
-          <p className="section-principal--parrafo">
+          <p className={styles.sectionPrincipalParrafo}>
             Mejora tus habilidades de codificación en Java realizando Tests.
           </p>
-          <button className="section-principal-btn">Empezar</button>
+          <button className={styles.sectionPrincipalBtn}>Empezar</button>
         </section>
-        <section className="section-imagen">
-          <img src="/imgs-home-page/icon-programming.png" alt="Logo de Java" />
+        <section className={styles.sectionImagen}>
+          <img 
+            src="/imgs-home-page/icon-programming.png" 
+            alt="Logo de Programación" 
+            className={styles.imgPortada}/>
         </section>
       </section>
     </div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import "./LoginComp.css";
+import styles from "./LoginComp.module.css";
 
 const LoginComp = (props) => {
 
@@ -12,19 +12,19 @@ const LoginComp = (props) => {
   const handleSubmit = () => { }
 
   return (
-    <div className="login">
+    <div className={styles.login}>
 
-      <div className="login-contenedor">
+      <div className={styles.loginContenedor}>
 
-        <div className="login-contenedor-texto">
+        <div className={styles.loginContenedorTexto}>
           <h2>LOGIN</h2>
         </div>
 
-        <div className="login-contenedor-error">{props.errorText}</div>
+        <div className={styles.loginContenedorError}>{props.errorText}</div>
 
-        <form className="login-contenedor-form" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={styles.loginContenedorform}>
 
-          <div className="one-column">
+          <div className={styles.oneColumn}>
             <input
               type="text"
               name="usuario"
@@ -36,7 +36,7 @@ const LoginComp = (props) => {
             />
           </div>
 
-          <div className="one-column">
+          <div className={styles.oneColumn}>
             <input
               type="password"
               name="password"
@@ -47,14 +47,14 @@ const LoginComp = (props) => {
             />
           </div>
 
-          <div className="botones-contenedor">
+          <div className={styles.botonesContenedor}>
 
-            <button className="btn" type="submit">
+            <button className={styles.btn} type="submit">
               Login
             </button>
 
-            <div className="login-enlace-singin">
-              <Link to="/register" className="enlace">Crear Usuario</Link>
+            <div className={styles.loginEnlaceSingin}>
+              <Link to="/register" className={styles.enlaceCrearUsuario}>Crear Usuario</Link>
             </div>
 
           </div>

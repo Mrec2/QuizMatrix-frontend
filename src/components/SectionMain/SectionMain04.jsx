@@ -1,21 +1,20 @@
-import "./SectionMain04.css";
+import styles from "./SectionMain04.module.css";
 
 const SectionMain04 = () => {
     return (
-        <div className="contenedor">
-            <section className="seccion-principal">
+        <div className={styles.contenedor}>
+            <section className={styles.seccionPrincipal}>
                 <div>
-                    <h3 className="seccion-info--title">Todos los tests puedes realizarlos en cualquier dispositivo, desde ordenadores hasta dispositivos móviles.</h3>
+                    <h3 className={styles.seccionInfoTitle}>Todos los tests puedes realizarlos en cualquier dispositivo, desde ordenadores hasta dispositivos móviles.</h3>
                 </div>
                 <div>
                     <img
                         src="../imgs-home-page/computer-icon.png"
                         alt="Icono de Ordenador y Movil"
-                        className="seccion-imagen-icon"
+                        className={styles.seccionImagenIcon}
                     />
                 </div>
             </section>
-
         </div>
     );
 };

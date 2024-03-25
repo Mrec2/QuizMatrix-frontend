@@ -1,4 +1,4 @@
-.testImgContainer {
+.testContainerImgs {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -10,7 +10,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.testImgContainer img {
+.testContainerImg {
     width: 150px; 
     height: 150px; 
     object-fit: contain;
@@ -20,11 +20,11 @@
     transition: transform 0.3s ease;
 }
 
-.testImgContainer img:hover {
+.testContainerImg:hover {
     transform: scale(1.05);
 }
 
-.testImgContainer p {
+.testContainerText {
     color: #333;
     font-size: 1.6rem;
     text-align: center;
